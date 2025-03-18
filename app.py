@@ -33,6 +33,11 @@ def modify():
 def elon_mask():
     return render_template('elon_mask.html')
 
+@app.route('/hello')
+def home():
+    return "Hello, World!"
+
+
 @flask_app.route('/Bernard')
 def Bernard():
     return render_template('Bernard.html')
